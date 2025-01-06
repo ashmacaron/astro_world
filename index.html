@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Horoscope Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #171738; /* Fallback for when GIF doesn't load */
+            overflow: hidden;
+        }
+
+        /* Background GIF */
+        .background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('images/stars.gif') center center / cover no-repeat;
+            opacity: 0.6; /* Optional: Adjust the transparency */
+        }
+
+        .content-box {
+            background-color: #ffffff;
+            color: #171738;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            position: relative;
+        }
+
+        .content-box img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #2E1760;
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #502290;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background GIF -->
+    <div class="background-gif"></div>
+
+    <div class="container text-center">
+        <div class="content-box">
+            <!-- Logo -->
+            <img src="/images/Logo.png" alt="Astro World Logo">
+            <h1>Welcome to Astro World</h1>
+            <p>Your daily guide to the stars and beyond.</p>
+
+            <div class="mt-4">
+                <a href="register.php" class="btn btn-custom btn-lg me-3">Register</a>
+                <a href="login.php" class="btn btn-custom btn-lg">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
